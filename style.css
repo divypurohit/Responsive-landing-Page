@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    ---primary-text-color : #183b56;
+    ---secondary-text-color : #577592
+    ---accent-color: #2294ed;
+    ---accent-color-dark : #1d69a3;
+    ---padding-inline-selection :20px;
+
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+    color: var(---primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.25rem;
+    color: var(---secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration : none;
+    display:inline-block;
+}
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    
+}
+.hover-links{
+    color: var(---primary-text-color);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color: var(---accent-color-dark);
+
+}
+.primary-link{
+    background-color: var(---accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(---secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-link:hover{
+    color: var(---accent-color-dark);
+    
+}
+ul{
+    list-style: none;
+}
+/* For special alingment */
+ .container{
+    max-width: 1180px;
+    margin-inline:auto;
+    padding-inline: var(---padding-inline-selection);
+}
+
+/* Banner */
+
+.top-banner{
+    background-image: url("asset\ 32.png");
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+.banner-text{
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+/* nav bar */
+
+.main-nav {
+    justify-content: space-between;
+    
+}
+nav{
+    background-color: bisque;
+}
+.company-logo img{
+
+    width: 200px;
+}
+.nav-links ul{
+    justify-content: space-between;
+    gap: 40px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
