@@ -1,52 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st Project</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="top-banner">
-        <div class="container">
-            <div class="small-bold-text banner-text">📣 Interviews is now in beta! Read more →</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Navigation Bar with Propdown Menu</title>
+  </head>
+  <body>
+    <header id="nav-menu" aria-label="navigation bar">
+      <div class="container">
+        <div class="nav-start">
+          <nav class="menu">
+            <ul class="menu-bar">
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown1"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="browse"
+                >
+                  Browse
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown1" class="dropdown">
+                  <ul role="menu">
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#best-of-the-day">
+                        <img src="./assets/icons/botd.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title"
+                            >Best of the day</span
+                          >
+                          <p>Shorts featured today by curators</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#featured-streams">
+                        <img src="./assets/icons/fs.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title"
+                            >Featured Streams</span
+                          >
+                          <p>Leading creatives livestreams</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#subscriptions">
+                        <img src="./assets/icons/sp.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Subscriptions</span>
+                          <p>Gain exclusive access</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#creative-feed">
+                        <img src="./assets/icons/cf.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Creative Feed</span>
+                          <p>See trending creations</p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
 
+                  <ul role="menu">
+                    <li class="dropdown-title">
+                      <span class="dropdown-link-title">Browse by apps</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#adobe-xd">
+                        <img src="./assets/icons/xd.svg" />
+                        Adobe XD
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#after-effect">
+                        <img src="./assets/icons/ae.svg" />
+                        After Effect
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#sketch">
+                        <img src="./assets/icons/sketch.svg" />
+                        Sketch
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#indesign">
+                        <img src="./assets/icons/indesign.svg" />
+                        Indesign
+                      </a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#figma">
+                        <img src="./assets/icons/figma.svg" />
+                        Figma
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button
+                  class="nav-link dropdown-btn"
+                  data-dropdown="dropdown2"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-label="discover"
+                >
+                  Discover
+                  <i class="bx bx-chevron-down" aria-hidden="true"></i>
+                </button>
+                <div id="dropdown2" class="dropdown">
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Browse Categories</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#branding">Branding</a>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#illustrations"
+                        >Illustration</a
+                      >
+                    </li>
+                  </ul>
+                  <ul role="menu">
+                    <li>
+                      <span class="dropdown-link-title">Download App</span>
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#mac-windows"
+                        >MacOS & Windows</a
+                      >
+                    </li>
+                    <li role="menuitem">
+                      <a class="dropdown-link" href="#linux">Linux</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="nav-link" href="/">Jobs</a></li>
+              <li><a class="nav-link" href="/">FAQs</a></li>
+              <li><a class="nav-link" href="/">About</a></li>
+            </ul>
+          </nav>
         </div>
-    </div>
+        <div class="nav-end">
+          <div class="right-container">
+            <form class="search" role="search">
+              <input type="search" name="search" placeholder="Search" />
+              <i class="bx bx-search" aria-hidden="true"></i>
+            </form>
+            </a>
+            <button class="btn btn-primary">Search</button>
+          </div>
 
-    <nav>
-        <div class="container main-nav flex">
-            <div class="company-logo">
-                <a href="#" class="company-logo">
-                    <img src="asset 1.png" alt="company logo">
-                </a>
-            </div>
-            <div class="nav-links">
-                <ul class="flex">
-                    <li><a href="#" class="hover-links ">Products</a></li>
-                    <li><a href="#" class="hover-links">Customer</a></li>
-                    <li><a href="#" class="hover-links">Pricing</a></li>
-                    <li><a href="#" class="hover-links">Resources</a></li>
-                    <li><a href="#" class="hover-links secondary-button">Sing in</a></li>
-                    <li><a href="#" class="hover-links primary-link">Sing out</a></li>        
-                </ul>
-            </div>
-        </div>    
-    </nav>
-
-    <div class="container">
-        <section class="companies-selection"></section>
-        <section class="feature-selection"></section>
-        <section class="big-feature-section"></section>
-        <section class="big-feature-section"></section>
-        <section class="big-feature-section"></section>
-        <section class="big-feature-section"></section>
-    </div>
-    
-
-    
-
-    
-    
-</body>
+          <button
+            id="hamburger"
+            aria-label="hamburger"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <i class="bx bx-menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
 </html>
